@@ -15,7 +15,7 @@ The "Clear" and "Clear PUT" buttons allow the user to clear the input fields, an
 
 Very basic, please contribute if you find it useful.
 
-To run this code, you need to have Python installed on your Windows system. Additionally, the code uses the Tkinter and subprocess modules, so you need to make sure that these are installed in your Python environment. To check if you have these modules installed, you can run the following command in your terminal or command prompt:
+To run this code, you need to have Python installed on your system. Additionally, the code uses the Tkinter and subprocess modules, so you need to make sure that these are installed in your Python environment. To check if you have these modules installed, you can run the following command in your terminal or command prompt:
 
 `pip show tkinter` <br />
 `pip show subprocess`
