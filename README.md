@@ -25,5 +25,5 @@ If the modules are not installed, you can install them by running the following 
 `pip install tkinter` <br />
 `pip install subprocess`
 
-From a terminal you can start Gooey with:
+From a terminal you can start Gooey with: <br />
 `python3 gooey.py`
