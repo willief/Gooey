@@ -7,7 +7,7 @@ The application has two main functions:
 
 "GET" - retrieves a file from the Safe Network and opens it.
 "PUT" - uploads a file to the Safe Network.
-The user can either enter a XorUrl in the input field and "GET", or select a file using the "Files to PUT" button and "PUT". The output of the "PUT" function is displayed.
+The user can either enter a XorUrl in the input field and "GET", or select a file using the "Files to Put" button and "PUT". The output of the "PUT" function is displayed.
 
 The code makes use of the subprocess module to run shell commands, and the os module to open the retrieved file. The filedialog module from the tkinter library is used for selecting a file.
 
