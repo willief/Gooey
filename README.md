@@ -24,4 +24,4 @@ If the module is not installed, you can install it by running the following comm
 `pip install tkinter` <br />
 
 From a terminal you can start Gooey with: <br />
-`python3 gooey.py`
+`python gooey.py`
