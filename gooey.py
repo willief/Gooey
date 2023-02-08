@@ -7,15 +7,15 @@ from tkinter import filedialog
 
 def run_command(*args):
     command = command_entry.get()
-    safe_command = "safe cat " + command + " > download"
+    safe_command = "safe cat " + command + " > ~/Downloads/download"
     try:
         subprocess.run(safe_command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         if platform.system() == "Linux":
-            os.system("xdg-open download")
+            os.system("xdg-open ~/Downloads/download")
         elif platform.system() == "Windows":
-            os.startfile("download")
+            os.startfile("~/Downloads/download")
         elif platform.system() == "Darwin":
-            os.system("open download")
+            os.system("open ~/Downloads/download")
     except Exception as e:
         print("An error occurred:", e)
 
@@ -48,9 +48,10 @@ def right_click_event(event):
 
 def copy_text(event):
     output_box.event_generate("<<Copy>>")
-
+        
 root = tk.Tk()
-root.geometry("900x600")
+root.geometry("800x550")
+root.resizable(False, False)
 root.title("SAFE CLI GUI")
 root.option_add("*Font", "Verdana 15")
 
@@ -62,6 +63,7 @@ root.columnconfigure(4, minsize=30, weight=1)
 
 command_label = tk.Label(root, text="Gooey", font=("Product Sans", 20, "bold"), fg="#0b275b", justify="center")
 command_label.grid(row=0, column=2, pady=50)
+
 
 command_entry = tk.Entry(root, width=80)
 command_entry.grid(row=1, column=1, pady=10, columnspan=3)
