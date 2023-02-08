@@ -3,12 +3,15 @@ import subprocess
 import os
 from tkinter import filedialog
 
+# Retrieves a file from the Safe Network
 def run_command(*args):
     command = command_entry.get()
     safe_command = "safe cat " + command + " > download"
+# The standard output and error are suppressed
     subprocess.run(safe_command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     os.system("open download")
 
+# Upload a file to the Safe Network
 def run_put_command(*args):
     put_command = put_command_entry.get()
     safe_put_command = "safe files put " + put_command
@@ -74,5 +77,3 @@ output_box.config(state="disabled")
 
 
 root.mainloop()
-
-
