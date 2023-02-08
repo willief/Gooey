@@ -65,8 +65,10 @@ command_label = tk.Label(root, text="Gooey", font=("Product Sans", 20, "bold"), 
 command_label.grid(row=0, column=2, pady=50)
 
 
-command_entry = tk.Entry(root, width=80)
+command_entry = tk.Entry(root, width=80, font=("TkDefaultFont", 10))
 command_entry.grid(row=1, column=1, pady=10, columnspan=3)
+command_entry.config(fg='#e0e0eb')
+command_entry.insert(0, 'safe://hy8oyeyybwsanc3ehnecyab9n3ufoip6x47e6553rb539aeqnej1xwadcbfdo')
 command_entry.bind("<Return>", run_command)
 command_entry.bind("<Button-3>", right_click_event)
 
