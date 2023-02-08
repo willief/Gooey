@@ -14,3 +14,16 @@ The code makes use of the subprocess module to run shell commands, and the os mo
 The "Clear" and "Clear PUT" buttons allow the user to clear the input fields, and the "PUT" output box respectively.
 
 Very basic, please contribute if you find it useful.
+
+To run this code, you need to have Python installed on your Windows system. Additionally, the code uses the Tkinter and subprocess modules, so you need to make sure that these are installed in your Python environment. To check if you have these modules installed, you can run the following command in your terminal or command prompt:
+
+pip show tkinter
+pip show subprocess
+
+If the modules are not installed, you can install them by running the following command:
+
+pip install tkinter
+pip install subprocess
+
+From a terminal you can start Gooey with:
+`python3 gooey.py`
