@@ -73,13 +73,13 @@ command_entry.bind("<Return>", run_command)
 command_entry.bind("<Button-3>", right_click_event)
 
 
-browse_button = tk.Button(root, text="Files To Put", bd=0, font=("Verdana", 10, "italic"), command=browse_file)
+browse_button = tk.Button(root, text="Select Files", bd=1, font=("Verdana", 10, "italic"), command=browse_file)
 browse_button.grid(row=2, column=2, pady=10)
 
-safe_command = tk.Button(root, text="Get", command=run_command, bd=0, font=("Verdana", 12, "bold"))
+safe_command = tk.Button(root, text="View", command=run_command, bd=0, font=("Verdana", 12, "bold"))
 safe_command.grid(row=2, column=1)
 
-safe_put_command = tk.Button(root, text="Put", command=run_put_command, bd=0, font=("Verdana", 12, "bold"))
+safe_put_command = tk.Button(root, text="Upload", command=run_put_command, bd=0, font=("Verdana", 12, "bold"))
 safe_put_command.grid(row=2, column=3)
 
 clear_button = tk.Button(root, text="x", command=clear_command, relief=tk.SUNKEN, bd=0)
@@ -88,6 +88,11 @@ clear_button.grid(row=1, column=4, pady=0)
 output_box = tk.Text(root, height=10, width=80)
 output_box.grid(row=4, column=1, pady=10, columnspan=3)
 output_box.config(state="disabled")
+
+scrollbar = tk.Scrollbar(root)
+scrollbar.grid(row=4, column=4, pady=10)
+output_box.config(yscrollcommand=scrollbar.set)
+scrollbar.config(command=output_box.yview)
 
 menu = Menu(output_box, tearoff=0)
 menu.add_command(label="Copy", command=lambda: copy_text(None))
