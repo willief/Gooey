@@ -50,7 +50,7 @@ def copy_text(event):
     output_box.event_generate("<<Copy>>")
         
 root = tk.Tk()
-root.geometry("800x550")
+root.geometry("800x625")
 root.resizable(False, False)
 root.title("SAFE CLI GUI")
 root.option_add("*Font", "Verdana 15")
@@ -88,6 +88,16 @@ clear_button.grid(row=1, column=4, pady=0)
 output_box = tk.Text(root, height=10, width=80)
 output_box.grid(row=4, column=1, pady=10, columnspan=3)
 output_box.config(state="disabled")
+
+tree_command = tk.Button(root, text="Tree", command=files_tree, bd=0, fg="#808996", font=("Verdana", 10, "bold",))
+container_command.grid(row=6, column=1)
+
+ls_command = tk.Button(root, text="Ls", command=files_ls, bd=0, fg="#808996", font=("Verdana", 10, "bold"))
+ls_command.grid(row=6, column=2)
+
+save_command = tk.Button(root, text="Save", command=save_command, bd=0,  fg="#808996",font=("Verdana", 10, "bold"))
+save_command.grid(row=6, column=3)
+
 
 scrollbar = tk.Scrollbar(root)
 scrollbar.grid(row=4, column=4, pady=10)
