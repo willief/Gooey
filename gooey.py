@@ -31,6 +31,15 @@ def run_put_command(*args):
     except Exception as e:
         print("An error occurred:", e)
 
+def save_command():
+    command_entry.delete(0, tk.END)
+
+def ls_command():
+    command_entry.delete(0, tk.END)
+
+def install_command():
+    command_entry.delete(0, tk.END)   
+
 def clear_command():
     command_entry.delete(0, tk.END)
 
@@ -89,13 +98,13 @@ output_box = tk.Text(root, height=10, width=80)
 output_box.grid(row=4, column=1, pady=10, columnspan=3)
 output_box.config(state="disabled")
 
-tree_command = tk.Button(root, text="Tree", command=files_tree, bd=0, fg="#808996", font=("Verdana", 10, "bold",))
-container_command.grid(row=6, column=1)
+install_command = tk.Button(root, text="Install SAFE", command=safe_command, bd=0, fg="#5e121c", font=("Verdana", 10, "bold",))
+install_command.grid(row=6, column=1)
 
-ls_command = tk.Button(root, text="Ls", command=files_ls, bd=0, fg="#808996", font=("Verdana", 10, "bold"))
+ls_command = tk.Button(root, text="Ls", command=safe_command, bd=0, font=("Verdana", 10, "bold"))
 ls_command.grid(row=6, column=2)
 
-save_command = tk.Button(root, text="Save", command=save_command, bd=0,  fg="#808996",font=("Verdana", 10, "bold"))
+save_command = tk.Button(root, text="Save", command=safe_command, bd=0, font=("Verdana", 10, "bold"))
 save_command.grid(row=6, column=3)
 
 
