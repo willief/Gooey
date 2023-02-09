@@ -34,7 +34,7 @@ def run_put_command(*args):
 def install_command():
     result = tkinter.messagebox.askyesno("Confirm", "Are you sure you want to install?")
     if result == True:
-        install_command = "curl https://raw.githubusercontent.com/maidsafe/safe_network/master/resources/scripts/install.sh | bash"
+        install_command = "curl https://raw.githubusercontent.com/maidsafe/safe_network/master/resources/scripts/install.sh | sudo bash"
         try:
             subprocess.run(install_command, shell=True,)
             output_box.config(state="normal")
