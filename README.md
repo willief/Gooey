@@ -9,7 +9,7 @@ The application has two main functions:
 "Upload" - uploads a file to the Safe Network.
 **More functions to be added**
 
-The user can either enter a XorUrl in the input field to "view" it, or select a file using the "Upload File" browse your file system for data to upload to the network". The output of the "upload" is displayed to copy the xorurl.
+The user can either enter a XorUrl in the input field to "view" it, or select a file using the "upload file" browse your file system for data to upload to the network". The output of the "upload" is displayed to copy the xorurl.
 
 The code makes use of the subprocess module to run shell commands, and the os module to open the retrieved file. The filedialog module from the tkinter library is used for selecting a file.
 
