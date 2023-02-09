@@ -25,3 +25,5 @@ If the module is not installed, you can install it by running the following comm
 
 From a terminal you can start Gooey with: <br />
 `python gooey.py`
+
+What I am working on can be seen in the fixes branch.
