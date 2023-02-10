@@ -21,5 +21,10 @@ If the module is not installed, you can install it by running the following comm
 
 `pip install tkinter` <br />
 
+Should this cause an error, on Debian-derived distros you can work around it with
+
+ `sudo apt-get install python-tk`
+
+
 From a terminal you can start Gooey with: <br />
 `python gooey.py`
