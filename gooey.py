@@ -1,4 +1,3 @@
-import setup.py
 import tkinter as tk
 import subprocess
 import platform
