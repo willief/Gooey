@@ -1,4 +1,9 @@
 # Gooey
 SAFE Command Line GUI 
 
-V0.2 is coming!
+To use build latest safe_network from github with `cagoo build --release --features data-network` and replace existing `safe` & `sn_node` with your build.
+
+`./main` to start it.
+`right click` will popultae the path to file, then `upload file` upload folder` as needed.
+
+
