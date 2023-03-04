@@ -8,6 +8,6 @@ To use build latest safe_network from github with `cagoo build --release --featu
  
  `cd` to the directory where it is kept.
 `./main` to start it.
-`right click` will popultae the path to file, then `upload file` upload folder` as needed.
+`right click` will popultae the path to file, then `upload file` `upload folder` as needed.
 
 
