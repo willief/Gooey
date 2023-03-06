@@ -1,7 +1,7 @@
 # Gooey
 SAFE Command Line GUI 
 
-To use build latest safe_network from github with `cagoo build --release --features data-network` and replace existing `safe` & `sn_node` with your build.
+To use build latest safe_network from github with `cargo build --release --features data-network` and replace existing `safe` & `sn_node` with your build.
 
 
  To use Gooey:
