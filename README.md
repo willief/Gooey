@@ -10,3 +10,16 @@ The AppImage needs to be started from your terminal so dbl clicking on it will s
  
 `right click` will popultae the path to file, then `upload file` `upload folder` as needed.
 
+
+
+
+
+
+
+
+Required:
+sudo apt-get install python3-tk
+pip3 install tqdm
+
+Run:
+python3 main.py
