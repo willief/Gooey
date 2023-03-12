@@ -1,0 +1,33 @@
+{
+  "Setup": [
+    "Install SAFE",
+    "Install Node",
+    "Start a Node",
+    "Primer",
+    "Check Version",
+    "Kill Node",
+    "Uninstall",
+    "About"
+  ],
+  "Join Network": [
+    "Add Maidsafe",
+    "Add Comnet",
+    "Run Baby-Fleming",
+    "Reset Baby-Fleming",
+    "Switch Maidsafe",
+    "Switch Comnet",
+    "Switch Baby-Fleming",
+    "Show Networks"
+  ],
+  "Use Network": [
+     "View",
+    "Upload File",
+    "Upload Folder",
+    "Save",
+    "Upload History",
+    "Clear History",
+    "Container Contents",
+    "Delete Downloads"
+  ]
+}
+
