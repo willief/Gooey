@@ -21,5 +21,3 @@ Required:
 sudo apt-get install python3-tk
 pip3 install tqdm
 
-Run:
-python3 main.py
